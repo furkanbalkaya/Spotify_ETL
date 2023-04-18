@@ -105,7 +105,7 @@ def run_spotify_etl():
     """
 
     cursor.execute(sql_query)
-    print("Opened database successfully")
+    print("Database opening successful")
 
     try:
         song_df.to_sql("my_played_tracks", engine, index=False, if_exists='append')
